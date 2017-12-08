@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Namma Bangalore Secret Santa!</title>
+		<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+		<script src="main.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+<style>
+	.line{
+		color: white;
+		font-family: sans-serif;
+		font-size: x-large;
+	}
+	.rules{
+		text-align: left;
+		width: 100%;
+	}
+	.blink_me {
+  animation: blinker 10s ease-in-out infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+</style>
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	<div class="container">
+					<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title .text-capitalize" id="exampleModalLongTitle">Secret Santa Namma Bengaluru Rules<br></h5>
+								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								  </button>
+								</div>
+								<div class="modal-body">
+										<div class="rules">
+												<span>
+													 <p>Its holiday season Sai Sai  _/\_ _/\_ ..  Namma Bengalurians, er, players we shall play a fun game..</p><br>
+													
+													 1) Each and everyone should login into http://secretsanta.bitballoon.com/ using their own Name's <span style="color:red; background-color:yellow	;">(don't be a jeedi ginja)</span> list provided and verify their name. <strong>The first letter is CAPITAL.</strong> 
+													 <br><br>
+													 2) If you are eligible, a <a href="#" role="button"  class="btn btn-info popover-test" title="This is the button" data-content="Popover body content is set in this attribute.">Show my child!</a> button appears <span class="blink_me">Magically</span> and click on that to reveal a name for which you should be sending the gift. If you have already revealed your Child or if some goforksaken reason it doesn't work you'll get <span style="color:red; background-color:yellow;">You're not eligible message (mem kad raww).</span> Contact <strong>CTS</strong> immediately in the later case. 
+													 <br><br>
+													 3) Gifts ARE TO BE delivered to the Child by <b>21st December,2017</b> <span class="font-italic"> (Mokshuuu cheppindi vinu)</span> as many are going home. <span style="color:red; background-color:yellow;">No extensions so plan accordingly.</span>
+													 <br><br>
+													 4) Please don't reveal to what you are gifting🎁 and to whom (could be used to eliminate guesses). Let everyone take a guess and do not post in groups or reveal to anyone. Let us all submit a google form where we can guess who gave us and what. The form shall be public to all at once and we shall have a group video call to discuss our guesses :)
+													 <br><br>
+													 5) Anyone disgressing the above rules SHOULD gift each and everyone in the group a dinner party at Meghana biryani and dance to Balayya songs💃
+													 <br><br>
+													 6) There shall be <b>NO RESETS</b> done unless there is an unforseeable error.
+													 <br><br>
+													 
+													 
+													  It's after the gifts are received that the fun starts. So what is Secret Santa? It’s mystery. It’s excitement. It’s the joy of knowing someone is thinking about you. It’s the thrill of opening something but, more than that, the magic of connection. It’s the knock on the door of a fire-warmed Scandinavian cabin, and a present tossed in from the dark and snowy woods. It’s experiencing that tingly feeling of love no matter where you are—or who is showing they care.
+													  <br>
+													  <br>
+													 Long story short | TLDR;<br>
+													  Saradaga rahasya santa adutunnam.. mee peru namodu chesina taruvata buddhi* ga vallaki bahumati pampagalaru ee nela 21 tariku lopu. Meeru em pamparo evariki teliyacheyakandi.. andaru okesari mana anchalanu parisiliddam.. emaina tappidalu unte nipunulani sampradinchagalaru.. patthi lekunda avvalnte pai niyamalanu paatinchandi.. andariki pandaga subhakanshalu.
+													 
+													  <br><br>
+													 
+													 Coded with ️️️❤️ by Prince Chandu and Vaddi Kumar.<br>
+													 Rules tabulated by Sampath on request by Sathwik "Tin" Sai 
+												</p>
+											</div>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Inka challe!</button>
+								  
+								</div>
+							  </div>
+							</div>
+						  </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>Secert Santa 2017</h1>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 show-forms">
+                    	<span class="show-register-form active">Login</span> 
+                    	
+                    </div>
+                </div>
+                
+                <div class="row register-form">
+                    <div class="col-sm-4 col-sm-offset-1">
+						<form role="form" action="" method="post" class="r-form"></form>
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="r-form-first-name">Your Name..</label>
+	                        	<input type="text"name="nameofSanta" id="santaName"  placeholder="Your Name.." class="r-form-first-name form-control" >
+	                        </div>
+	                       <div class="row">
+							<div class="col-sm-2 icon"><button type="button" class="btn" value="Verify" id="VerifyButton" onclick="getNames()">Verify</button></div>
+							<div class="col-sm offset-5"><button type="button"value="Generate" id="generateButton" style="visibility:hidden" onclick="onGenerate()" class="btn">Show my Child!</button></div>
+						</div>
+						</form>
+					</div>
+					<p class="line" id="ansswer"></p>
+                    <div class="col-sm-6 forms-right-icons">
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-pencil"></i></div>
+							<div class="col-sm-10" id="answer">
+								<h3>Please use your names this way..</h3>
+								<p>
+									<ol id="names">
+										<li>Sampath</li>
+										<li>Chandu</li>
+										<li>Rahul</li>
+										<li>Devendra</li>
+										<li>Prithvi</li>
+										<li>Meghana</li>
+										<li>MLD</li>
+										<li>Jahnavi</li>
+										<li>Hemanth</li>
+										<li>Sravani</li>
+										<li>Sruthi</li>
+										<li>Rishith</li>
+										<li>Chakri</li>
+										<li>Sathwik</li>
+									</ol>
+								</p>
+							</div>
+						</div>
+						
+                    </div>
+                </div>
+                
+                
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p>Handcrafted with ❤️ from Namma Bengaluru..</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+		<script type="text/javascript">
+			$(window).on('load',function(){
+				$('#exampleModalLong').modal('show');
+			});
+			(function blink() { 
+  $('.blink_me').fadeOut(500).fadeIn(1000, blink); 
+})();
+		</script>
+    </body>
+
+</html>

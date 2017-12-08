@@ -1,0 +1,22 @@
+<html>
+<title>
+Secret Santa!
+</title>
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script src="main.js"></script>
+<body>
+    <table>
+        <tr>
+   <td> <p>Your Name:</p></td>
+   <td> <input type="textbox" name="nameofSanta" id="santaName"/></td>
+</tr>
+<tr>
+    <td><input type="button" value="Verify" id="VerifyButton" onclick="getNames()"></td>
+    <td><input type="button" value="Generate" id="generateButton" style="display:none" onclick="onGenerate()"></td>
+</tr>
+</table>
+<p id="answer"></p>
+</body>
+</html>
+
+
